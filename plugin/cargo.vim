@@ -8,6 +8,8 @@ autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs setlocal makeprg=cargo
 
 if !exists('g:cargo_command')
   let g:cargo_command = "make {cmd}"
+else
+  let g:cargo_command = "cargo {cmd}"
 endif
 
 com! -nargs=* CargoBench call cargo#run('bench ' . <q-args>)
