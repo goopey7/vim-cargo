@@ -1,7 +1,7 @@
-#if exists('g:vim_cargo')
-#  finish
-#endif
-#let vim_cargo=1
+if exists('g:vim_cargo')
+  finish
+endif
+let vim_cargo=1
 
 #autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
 #autocmd BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs setlocal makeprg=cargo
