@@ -1,9 +1,9 @@
-com! -nargs=* CargoBench execute 'cargo bench'
-com! -nargs=* CargoBuild execute 'cargo build'
-com! -nargs=* CargoCheck execute 'cargo check'
-com! -nargs=* CargoClean execute 'cargo clean'
-com! -nargs=* CargoDoc execute 'cargo doc'
-com! -nargs=* CargoRun execute 'cargo run'
-com! -nargs=* CargoTest execute 'cargo test'
-com! -nargs=* CargoUpdate execute 'cargo update'
+com! -nargs=* CargoBench call system('cargo bench')
+com! -nargs=* CargoBuild call system('cargo build')
+com! -nargs=* CargoCheck call system('cargo check')
+com! -nargs=* CargoClean call system('cargo clean')
+com! -nargs=* CargoDoc call system('cargo doc')
+com! -nargs=* CargoRun call system('cargo run')
+com! -nargs=* CargoTest call system('cargo test')
+com! -nargs=* CargoUpdate call system('cargo update')
 
