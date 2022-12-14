@@ -21,28 +21,28 @@ com! -nargs=* CargoRun call cargo#run()
 com! -nargs=* CargoTest call cargo#test()
 com! -nargs=* CargoUpdate call cargo#update()
 
-func! cargo#bench
+func! cargo#bench(...)
   execute "cargo bench"
 endf
-func! cargo#build
+func! cargo#build(...)
   execute "cargo build"
 endf
-func! cargo#check()
+func! cargo#check(...)
   execute "cargo check"
 endf
-func! cargo#clean()
+func! cargo#clean(...)
   execute "cargo clean"
 endf
-func! cargo#doc()
+func! cargo#doc(...)
   execute "cargo doc"
 endf
-func! cargo#run()
+func! cargo#run(...)
   execute "cargo run"
 endf
-func! cargo#test()
+func! cargo#test(...)
   execute "cargo test"
 endf
-func! cargo#update()
+func! cargo#update(...)
   execute "cargo update"
 endf
 
